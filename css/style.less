@@ -311,7 +311,7 @@ html {
 
 @media(max-width: 768px) {
     .container {
-        width: 80%;
+        width: 90%;
         .resume {
             .logo {
                 &-img {
@@ -343,7 +343,26 @@ html {
 }
 
 @media(max-width: 480px) {
+    .resume {
+        &-wrap {
+            .logo {
+                display: none;
+            }
+        }
+    }
+    .about {
+        &-contacts {
+            a {
+                display: inline-block;
+            }
+        }
+    }
     .logo-img {
         display: none;
+    }
+    .list {
+        &-item {
+            text-align: center;
+        }
     }
 }
